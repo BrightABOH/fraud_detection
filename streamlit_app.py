@@ -7,7 +7,7 @@ import os
 
 # Load the saved pipeline
 # Load the saved pipeline
-pipeline = joblib.load('/fraud_detection/mode/xgboost_model_pipeline.pkl')
+pipeline = joblib.load('fraud_detection/mode/xgboost_model_pipeline.pkl')
 
 
 class PreprocessingPipeline:
@@ -236,7 +236,7 @@ def main():
         policy_numbers = data['PolicyNumber'].astype(str).unique().tolist()
     else:
         # Load policy numbers from the default file
-        file_path = "data/default-2-NewNew.xlsx"
+        file_path = "fraud_detection/data/default-2-NewNew.xlsx"
         data = pd.read_excel(file_path)
         policy_numbers = data['PolicyNumber'].astype(str).unique().tolist()
    
