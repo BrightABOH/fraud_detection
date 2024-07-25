@@ -12,8 +12,12 @@ The Intelligent Auto Insurance Fraud Detection System is a powerful AI-driven ap
 
 
 # Installation
-Clone the Repository
+- Clone the Repository
 ```sh
 git clone https://github.com/BrightABOH/fraud-detection.git
 cd fraud-detection
 ```
+- Install Dependencies
+  ```sh
+  pip install -r requirements.txt
+  ```
