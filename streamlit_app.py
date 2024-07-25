@@ -19,7 +19,7 @@ def load_pipeline(pipeline_path):
         st.stop()
 
 # Path to the model pipeline
-pipeline_path = 'fraud_detection/model/xgboost_model_pipeline.pkl'
+pipeline_path = 'model/xgboost_model_pipeline.pkl'
 
 # Load the saved pipeline
 pipeline = load_pipeline(pipeline_path)
