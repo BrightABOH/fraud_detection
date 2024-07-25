@@ -18,6 +18,6 @@ git clone https://github.com/BrightABOH/fraud-detection.git
 cd fraud-detection
 ```
 - Install Dependencies
-  ```sh
-  pip install -r requirements.txt
-  ```
+```sh
+pip install -r requirements.txt
+```
