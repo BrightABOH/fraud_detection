@@ -1,6 +1,6 @@
-absl-py==1.3.0
-aenum==3.1.11
-affine==2.3.0
+absl-py
+aenum
+affine
 aiohttp==3.8.1
 aiohttp-retry==2.4.6
 aiosignal==1.2.0
@@ -398,7 +398,6 @@ pyls-black @ file:///tmp/build/80754af9/pyls-black_1607553132291/work
 pyls-spyder @ file:///tmp/build/80754af9/pyls-spyder_1613849700860/work
 Pympler==1.1
 pyod==1.1.3
-pyodbc===4.0.0-unsupported
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
 pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
 pyperclip==1.8.2
