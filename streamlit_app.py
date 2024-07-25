@@ -7,8 +7,7 @@ import os
 
 # Load the saved pipeline
 # Load the saved pipeline
-pipeline_path = os.path.join(os.path.dirname(__file__), 'model', 'xgboost_model_pipeline.pkl')
-pipeline = joblib.load(pipeline_path)
+pipeline = joblib.load('/fraud_detection/mode/xgboost_model_pipeline.pkl')
 
 
 class PreprocessingPipeline:
