@@ -9,3 +9,11 @@ The Intelligent Auto Insurance Fraud Detection System is a powerful AI-driven ap
 - Batch Processing: Processes entire datasets for comprehensive fraud detection.
 - Adjustable Threshold: Fine-tune the fraud probability threshold to control sensitivity.
 - Interactive Visualization: Presents results in an easily interpretable format with options to download predictions.
+
+
+# Installation
+Clone the Repository
+```sh
+git clone https://github.com/BrightABOH/fraud-detection.git
+cd fraud-detection
+```
