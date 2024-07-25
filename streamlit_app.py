@@ -6,9 +6,23 @@ import base64
 import os
 
 # Load the saved pipeline
-# Load the saved pipeline
-pipeline = joblib.load('https://github.com/BrightABOH/fraud_detection/tree/main/model/xgboost_model_pipeline.pkl')
+# Function to load the model pipeline
+def load_pipeline(pipeline_path):
+    try:
+        pipeline = joblib.load(pipeline_path)
+        return pipeline
+    except ModuleNotFoundError as e:
+        st.error(f"ModuleNotFoundError: {e}")
+        st.stop()
+    except Exception as e:
+        st.error(f"An error occurred while loading the model pipeline: {e}")
+        st.stop()
 
+# Path to the model pipeline
+pipeline_path = 'fraud_detection/model/xgboost_model_pipeline.pkl'
+
+# Load the saved pipeline
+pipeline = load_pipeline(pipeline_path)
 
 class PreprocessingPipeline:
     def __init__(self, threshold=0.5):
