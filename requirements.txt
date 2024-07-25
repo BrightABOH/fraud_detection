@@ -1,7 +1,7 @@
 
-joblib
 pandas
 numpy
 joblib
 xgboost
 streamlit
+sklearn
