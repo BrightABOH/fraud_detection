@@ -5,7 +5,10 @@ import joblib
 import base64
 
 # Load the saved pipeline
-pipeline = joblib.load('model/xgboost_model_pipeline.pkl')
+# Load the saved pipeline
+pipeline_path = os.path.join(os.path.dirname(__file__), 'model', 'xgboost_model_pipeline.pkl')
+pipeline = joblib.load(pipeline_path)
+
 
 class PreprocessingPipeline:
     def __init__(self, threshold=0.5):
