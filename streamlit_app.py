@@ -7,7 +7,7 @@ import os
 
 # Load the saved pipeline
 # Load the saved pipeline
-pipeline = joblib.load('https://github.com/BrightABOH/fraud_detection/tree/main/mode/xgboost_model_pipeline.pkl')
+pipeline = joblib.load('https://github.com/BrightABOH/fraud_detection/tree/main/model/xgboost_model_pipeline.pkl')
 
 
 class PreprocessingPipeline:
