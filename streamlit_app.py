@@ -5,7 +5,7 @@ import joblib
 import base64
 
 # Load the saved pipeline
-pipeline = joblib.load('/Users/brightabohsilasedem/xgboost_model_pipeline.pkl')
+pipeline = joblib.load('model/xgboost_model_pipeline.pkl')
 
 class PreprocessingPipeline:
     def __init__(self, threshold=0.5):
@@ -212,7 +212,7 @@ def main():
         <div class="title">Intelligent Auto Insurance Fraud Detection System</div>
     """, unsafe_allow_html=True)
     
-    set_background('/Users/brightabohsilasedem/Downloads/AI-Fraud-Detection.jpg')  # Update with your correct path
+    set_background('data/AI-Fraud-Detection.jpg')  # Update with your correct path
 
     st.sidebar.title("About")
     about_expander = st.sidebar.expander("About", expanded=False)
@@ -233,7 +233,7 @@ def main():
         policy_numbers = data['PolicyNumber'].astype(str).unique().tolist()
     else:
         # Load policy numbers from the default file
-        file_path = "/Users/brightabohsilasedem/Downloads/default-2-NewNew.xlsx"
+        file_path = "data/default-2-NewNew.xlsx"
         data = pd.read_excel(file_path)
         policy_numbers = data['PolicyNumber'].astype(str).unique().tolist()
    
