@@ -238,6 +238,7 @@ def main():
             Welcome to the Intelligent Auto Insurance Fraud Detection System. This application leverages artificial intelligence to identify potential fraudulent insurance claims with high accuracy. 
             Users can upload their own claim datasets for analysis, or the system can utilize a default dataset for predictions if no file is provided. Enter or select a policy number for individual claim evaluation, or process an entire dataset for batch fraud detection. 
             Adjust the fraud probability threshold to fine-tune the sensitivity of the predictions and download the results for further review.
+            If the claim dataset is unavailable, click the submit button to have batch processing of the default data or use any of the default policy numbers
         """)
     
     st.sidebar.title("Upload File")
