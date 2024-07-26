@@ -226,7 +226,7 @@ def main():
             font-weight: bold;
         }
         </style>
-        <div class="title">Intelligent Auto Insurance Fraud Detection System</div>
+        <div class="title">AI Auto Insurance Fraud Detection System</div>
     """, unsafe_allow_html=True)
     
     set_background('data/AI-Fraud-Detection.jpg')  # Update with your correct path
@@ -236,13 +236,13 @@ def main():
     with about_expander:
         st.write("""
             Welcome to the Intelligent Auto Insurance Fraud Detection System. This application leverages artificial intelligence to identify potential fraudulent insurance claims with high accuracy. 
-            Users can upload their own claim datasets for analysis, or the system can utilize a default dataset for predictions if no file is provided. Enter or select a policy number for individual claim evaluation, or process an entire dataset for batch fraud detection. 
+            Users can upload their own claim datasets for analysis, or the system can utilize a default dataset for predictions if no file is provided(For demos). Enter or select a policy number for individual claim evaluation, or process an entire dataset for batch fraud detection. 
             Adjust the fraud probability threshold to fine-tune the sensitivity of the predictions and download the results for further review.
-            If the claim dataset is unavailable, click the submit button to have batch processing of the default data or use any of the default policy numbers
+            
         """)
     
     st.sidebar.title("Upload File")
-    uploaded_file = st.sidebar.file_uploader("Upload a claim file in Excel or interact with the default policy numbers ", type=["xlsx"])
+    uploaded_file = st.sidebar.file_uploader("Upload a claim file in Excel", type=["xlsx"])
     threshold = st.sidebar.slider("Set Fraud Probability Threshold", 0.0, 1.0, 0.5)
     
     if uploaded_file is not None:
