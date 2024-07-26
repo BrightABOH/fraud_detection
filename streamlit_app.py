@@ -242,8 +242,8 @@ def main():
         """)
     
     st.sidebar.title("Upload File")
-    uploaded_file = st.sidebar.file_uploader("Upload a claim file in Excel ", type=["xlsx"])
-    threshold = st.sidebar.slider("Set Fraud Probability Threshold", 0.0, 1.0, 0.5)
+    uploaded_file = st.sidebar.file_uploader("Upload a claim file in Excel or interact with the default policy numbers ", type=["xlsx"])
+    #threshold = st.sidebar.slider("Set Fraud Probability Threshold", 0.0, 1.0, 0.5)
     
     if uploaded_file is not None:
         # Load policy numbers from the uploaded file
