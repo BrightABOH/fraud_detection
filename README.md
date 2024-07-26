@@ -33,3 +33,47 @@ cd fraud-detection
 ```sh
 pip install -r requirements.txt
 ```
+
+# Usage
+1. Run the Streamlit Application
+```sh
+streamlit run stream_app.py
+
+```
+2. Navigate to the Application
+- Open your web browser and go to http://localhost:8501
+3. Use the Application
+- Upload a Claim File: Use the sidebar to upload an Excel file containing insurance claim data.
+- Set Fraud Probability Threshold: Adjust the slider to set the threshold for fraud prediction.
+- Enter or Select a Policy Number: Enter a policy number manually or select from the dropdown list.
+- Submit for Analysis: Click the "Submit" button to process the data and view results.
+If no file is uploaded, the system will automatically use the default dataset for analysis.
+
+# Application Interface
+
+- About: Provides information about the application.
+- Upload File: Allows users to upload their claim datasets.
+- Threshold Slider: Adjusts the sensitivity of fraud detection.
+- Policy Number Input: For single claim analysis.
+- Results Display: Shows predictions and probabilities for each claim.
+- Download Button: Exports the results to a CSV file.
+
+# Background Image
+
+To set a custom background image for the application, place your image file in the specified directory and update the path in the set_background function.
+
+# Contribution
+
+We welcome contributions to improve this project! Feel free to open issues or submit pull requests.
+
+# License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+# Contact
+For any inquiries or support, please contact:
+
+Bright Aboh
+Website: https://brightaboh.github.io
+LinkedIn: https://www.linkedin.com/in/bright-aboh-b85932ba/
+Email: bright.s.e.aboh@aims-senegal.org
