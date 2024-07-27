@@ -226,7 +226,7 @@ def main():
             font-weight: bold;
         }
         </style>
-        <div class="title"> Intelligent Auto Insurance Fraud Detection System</div>
+        <div class="title">Intelligent Auto Insurance Fraud Detection System</div>
     """, unsafe_allow_html=True)
     
     set_background('data/AI-Fraud-Detection.jpg')  # Update with your correct path
