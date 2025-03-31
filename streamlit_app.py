@@ -6,7 +6,6 @@ import base64
 import os
 
 # Load the saved pipeline
-# Function to load the model pipeline
 def load_pipeline(pipeline_path):
     try:
         pipeline = joblib.load(pipeline_path)
@@ -170,7 +169,7 @@ def predict_from_csv(file_path, threshold=0.5):
     for column, reverse_map in reverse_maps.items():
         original_data[column] = original_data[column].map(reverse_map)
     
-    original_data['Age'] = original_data['Age'].astype(int)   # Round age to the nearest number
+    original_data['Age'] = original_data['Age'].astype(int)   
     
     return original_data[['PolicyNumber', 'Make', 'Sex', 'Age', 'FraudProbability', 'Prediction']]
 
@@ -181,7 +180,7 @@ def predict_from_policy_number(file_path, policy_number, threshold=0.5):
     claim_details['FraudProbability'] = probabilities
     claim_details['Prediction'] = predictions
     claim_details['Prediction'] = claim_details['Prediction'].map({0: 'Legit', 1: 'Possible Fraud'})
-    claim_details['Age'] = claim_details['Age'].astype(int)  # Ensure age is a whole number
+    claim_details['Age'] = claim_details['Age'].astype(int) 
     
     # Drop duplicates if any
     claim_details = claim_details.drop_duplicates(subset=['PolicyNumber'])
@@ -217,7 +216,7 @@ def main():
             unsafe_allow_html=True
         )
     
-    # Set the custom page title with color
+    # Page title with color
     st.markdown("""
         <style>
         .title {
@@ -280,7 +279,7 @@ def main():
                 
                 result = format_predictions(result)
             
-            # Custom CSS to style the table
+            #CSS to style for table
             st.write("""
                 <style>
                 table {
